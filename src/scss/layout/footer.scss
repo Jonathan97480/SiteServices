@@ -1,0 +1,54 @@
+.footer{
+    background-color: $color-quaternary;
+    padding: 2rem;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        @include media(medium){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__list{
+            &__title{
+                font-family: robotoSlab;
+                font-size: 1.6rem;
+                font-weight:600;
+                color: $color-primary;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                a{
+                    font-family: robotoSlab;
+                    font-size: 1.6rem;
+                    font-weight:400;
+                    color: $color-primary;
+                    text-decoration: none;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        color: $color-tertiary;
+                    }
+
+                 
+                }
+         
+            }
+            &__social{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,89 @@
+main{
+   padding-left: .8rem;
+    padding-right: .8rem;
+    @include media(medium){
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .section{
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-secondary;
+        border-radius: 5px;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        &__title{
+            font-size: 2.4rem;
+            font-weight: bold;
+            font-family: robotoSlab;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__description{
+                font-size: 1.6rem;
+                font-family: roboto;
+                text-align: left;
+                line-height: 2rem;
+                margin-bottom: 2rem;
+            }
+            @include media(medium){
+                flex-direction: row;
+                justify-content: space-between;
+                &__description{
+                    width: 50%;
+                }
+            }
+        }
+        margin-bottom: 10.3rem;
+
+        &__buton{
+            margin-top: 2rem;
+            border: none;
+            background-color: $color-tertiary;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            font-family: robotoSlab;
+            color: $color-primary;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background-color: $color-quaternary;
+            }
+
+        }
+    }
+    .home{
+        &__background{
+            padding-top: 8rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+           
+        
+        }
+
+        &__title{
+            font-size: 4rem;
+            font-weight: bold;
+            font-family: robotoSlab;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &__description{
+            font-size: 1.6rem;
+            font-family: roboto;
+            text-align: left;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+   
+}
